@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encuentra tu Glow Up</title>
+
+  <link href="index2.css" rel="stylesheet" type="text/css"/>
+
+  <style>
+    :root {
+      --color-principal: #8a4d85;
+      --color-secundario: #e8b3e1;
+      --color-texto: #b4166f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--color-principal);
+      color: rgb(255, 255, 255);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: rgb(255, 255, 255);
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #e9a3e5, #ffffff);
+      color: rgb(181, 78, 147);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: white;
+      color: var(--color-principal);
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #eee;
+    }
+
+    .info, .servicios {
+      padding: 3rem 2rem;
+      background: var(--color-secundario);
+    }
+
+    .info h3, .servicios h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--color-principal);
+    }
+
+    .info p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 2rem;
+    }
+
+    .servicio {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .servicio:hover {
+      transform: translateY(-5px);
+    }
+
+    .servicio h4 {
+      margin-top: 1rem;
+      color: var(--color-principal);
+    }
+
+    .servicio p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    .redes a {
+      margin: 0 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>BLOG</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="pagina1.html">informacion de la pagina</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+    <h2>Encuentra tu GLOW UP!!</h2>
+    <p>"Tu glow up no empieza en el espejo, empieza en cómo te hablas, cómo te cuidas y cómo te eliges cada día."</p>
+    </div>
+    <button>
+
+        <a href="registrate.html">Registrate 📸</a>
+    </button>
+  </section>
+
+  <section class="info" id="info">
+    <h3>Una mujer es hermosa cuando se acepta a sí misma, cuando se reconoce valiosa sin necesidad de validación externa. 
+      Su fuerza no la aleja de la belleza, la potencia. Las mujeres que se levantan cada día a pesar del cansancio, 
+      que cuidan de otros, que estudian, trabajan, sueñan, crean y resisten, son ejemplos vivos de que la belleza también se 
+      encuentra en la perseverancia y el coraje.</h3>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <h3>Nuestros Servicios</h3>
+    <div class="servicios-grid">
+
+      <div class="servicio">
+        <h4>SKINCARE</h4>
+        <p>El SKINCARE Se refiere a todos los hábitos, productos y rutinas que una persona realiza 
+          para mantener su piel limpia, saludable, hidratada y protegida.</p>
+          <button> 
+            <a href="tips1.html">Haz clic para ver tips</a>
+          </button>
+      </div>
+
+      <div class="servicio">
+        <h4>VESTIMENTA</h4>
+        <p>"Vístete como si ya fueras la persona que sueñas ser; tu estilo es la forma más visible de mostrar tu confianza sin 
+          decir una sola palabra."</p>
+        <button>
+          <a href="tips2.html">Haz clic para mas informacion</a>
+        </button>
+      </div>
+
+      <div class="servicio">
+        <h4>CUIDADO PERSONAL</h4>
+        <p>"Cuidarte no es un lujo, es un acto de amor propio: cuando te haces prioridad, floreces por dentro y por fuera."</p>
+          <button>
+            <a href="tips3.html">Haz clic para ver</a>
+          </button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Creado el 16 de junio del 2025</p>
+  </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

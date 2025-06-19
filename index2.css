@@ -1,0 +1,51 @@
+/*codigo para boton neon*/
+button {
+    --glow-color: rgb(255, 176, 248);
+    --glow-spread-color: rgb(182, 35, 160);
+    --enhanced-glow-color: rgb(151, 60, 157);
+    --btn-color: rgb(224, 153, 210);
+    /define el color y el tamaño del borde/
+    border: 25em solid var(--glow-color);
+    padding: 1em 3em;
+    /define el color del texto/
+    color: var(--glow-color);
+    font-size: 10px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 5em;
+    outline: none;
+    /Hace el bordeado de fuera y interna/
+    box-shadow: 0 0 1em.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    /tiempo de transicion/
+    transition: all 0.3s;
+}
+button::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(50px) rotateX(10px) scale(100px);
+
+}
+button:hover{
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+button:active{
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
